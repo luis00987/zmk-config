@@ -50,7 +50,7 @@
             >;
         };
 
-        leftSpaceLayerWindows {
+        windowsShorcuts {
             bindings = <
 &none        &none      &none      &kp LG(LS(S))  &kp DELETE  &none    &none  &none  &none  &none  &none  &none
 &kp LS(TAB)  &kp LC(A)  &kp LC(X)  &kp LC(C)      &kp LC(V)   &none    &none  &none  &none  &none  &none  &none
@@ -101,6 +101,15 @@
 &none  &none  &none  &none           &none  &none          &none         &none         &none         &none         &none         &none
 &none  &none  &none  &none           &none  &none          &none         &none         &none         &none         &none         &none
                      &studio_unlock  &none  &bootloader    &bootloader   &none         &sys_reset
+            >;
+        };
+
+        ipadShorcuts {
+            bindings = <
+&trans  &trans     &trans     &kp LG(LS(NUMBER_4))  &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LG(A)  &kp LG(X)  &kp LG(C)             &kp LG(V)  &none     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LG(Z)  &trans     &trans                &kp LG(H)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans                &trans     &trans    &trans  &trans  &trans
             >;
         };
     };
