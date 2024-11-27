@@ -37,6 +37,22 @@
         };
     };
 
+    macros {
+        ipadBT: ipadBT {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 1 &to 1>;
+            label = "IPADBT";
+        };
+
+        windowsBT: windowsBT {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 0 &to 0>;
+            label = "WINDOWSBT";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -114,10 +130,10 @@
 
         adjustLayer {
             bindings = <
-&none  &none  &none  &none           &none  &none          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
-&none  &none  &none  &none           &none  &none          &none         &none         &none         &none         &none         &out OUT_TOG
-&none  &none  &none  &none           &none  &none          &none         &none         &none         &none         &none         &none
-                     &studio_unlock  &to 1  &bootloader    &bootloader   &to 0         &sys_reset
+&none  &none  &none  &none           &none  &none          &windowsBT   &ipadBT  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
+&none  &none  &none  &none           &none  &none          &none        &none    &none         &none         &none         &out OUT_TOG
+&none  &none  &none  &none           &none  &none          &none        &none    &none         &none         &none         &none
+                     &studio_unlock  &to 1  &bootloader    &bootloader  &to 0    &sys_reset
             >;
         };
     };
