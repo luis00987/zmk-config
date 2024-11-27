@@ -14,8 +14,6 @@
     release-after-ms = <600>;
 };
 
-&lt { tapping-term-ms = <150>; };
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -23,7 +21,7 @@
         IpadShorcut {
             timeout-ms = <50>;
             key-positions = <38 39>;
-            bindings = <&mo 3>;
+            bindings = <&sk LEFT_SHIFT>;
         };
 
         shift1 {
