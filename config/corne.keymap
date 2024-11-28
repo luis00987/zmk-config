@@ -63,7 +63,7 @@
         minimize: minimize {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(SPACE)>, <&macro_wait_time 50>, <&kp N>;
+            bindings = <&kp LA(SPACE)>, <&macro_wait_time 150>, <&kp N>;
 
             label = "MINIMIZE";
         };
