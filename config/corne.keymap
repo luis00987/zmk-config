@@ -46,24 +46,28 @@
 
             tapping-term-ms = <250>;
         };
-    hml: homewrow_mods_left {
-      compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <2>;
-      label = "HOMEROW_MODS_LEFT_HAND";
-      bindings = <&kp>, <&kp>;
-      tapping-term-ms = <200>;
 
-      hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
-    };
-    hmr: homewrow_mods_right {
-      compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <2>;
-      label = "HOMEROW_MODS_RIGHT_HAND";
-      bindings = <&kp>, <&kp>;
-      tapping-term-ms = <200>;
+        hml: homewrow_mods_left {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            label = "HOMEROW_MODS_LEFT_HAND";
+            bindings = <&kp>, <&kp>;
 
-      hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
-    };
+            tapping-term-ms = <200>;
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
+            flavor = "tap-unless-interrupted";
+        };
+
+        hmr: homewrow_mods_right {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            label = "HOMEROW_MODS_RIGHT_HAND";
+            bindings = <&kp>, <&kp>;
+
+            tapping-term-ms = <200>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
+            flavor = "tap-unless-interrupted";
+        };
     };
 
     keymap {
@@ -71,10 +75,10 @@
 
         defaultWindows {
             bindings = <
-&lt 6 ESC       &kp Q  &kp W  &kp E     &kp R              &kp T          &kp Y        &kp U      &kp I                 &kp O    &kp P     &kp BACKSPACE
-&mt LSHIFT TAB  &kp A  &kp S  &kp D     &kp F              &kp G          &kp H        &kp J      &kp K                 &kp L    &kp SEMI  &kp SQT
-&kp LCTRL       &kp Z  &kp X  &kp C     &kp V              &kp B          &kp N        &kp M      &kp COMMA             &kp DOT  &kp FSLH  &shiftCaps
-                              &kp LGUI  &mt LALT QUESTION  &lt 1 SPACE    &lt 3 SPACE  &lt 4 RET  &lt 5 K_CONTEXT_MENU
+&lt 6 ESC       &kp Q              &kp W            &kp E                &kp R              &kp T          &kp Y        &kp U      &kp I                 &kp O    &kp P     &kp BACKSPACE
+&mt LSHIFT TAB  &hml LEFT_SHIFT A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_GUI F    &kp G          &kp H        &kp J      &kp K                 &kp L    &kp SEMI  &kp SQT
+&kp LCTRL       &kp Z              &kp X            &kp C                &kp V              &kp B          &kp N        &kp M      &kp COMMA             &kp DOT  &kp FSLH  &shiftCaps
+                                                    &kp LGUI             &mt LALT QUESTION  &lt 1 SPACE    &lt 3 SPACE  &lt 4 RET  &lt 5 K_CONTEXT_MENU
             >;
         };
 
