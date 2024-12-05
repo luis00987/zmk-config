@@ -25,7 +25,7 @@
             layers = <0>;
         };
 
-        backSpace {
+        backSpaceR {
             bindings = <&kp BACKSPACE>;
             key-positions = <19 20>;
             require-prior-idle-ms = <100>;
@@ -34,13 +34,20 @@
 
         esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <3 4>;
+            key-positions = <13 14>;
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
 
         tab {
             bindings = <&kp TAB>;
+            key-positions = <3 4>;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
+        };
+
+        backSpaceL {
+            bindings = <&kp BACKSPACE>;
             key-positions = <15 16>;
             require-prior-idle-ms = <100>;
             layers = <0>;
