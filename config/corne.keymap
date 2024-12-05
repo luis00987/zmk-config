@@ -39,7 +39,7 @@
             layers = <0>;
         };
 
-        tab {
+        questionR {
             bindings = <&kp QUESTION>;
             key-positions = <15 16>;
             require-prior-idle-ms = <100>;
@@ -54,7 +54,14 @@
 
         aphostrope {
             bindings = <&kp SQT>;
-            key-positions = <22 21>;
+            key-positions = <21 20>;
+            layers = <0>;
+        };
+
+        questionL {
+            bindings = <&kp QUESTION>;
+            key-positions = <19 20>;
+            require-prior-idle-ms = <100>;
             layers = <0>;
         };
     };
