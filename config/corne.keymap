@@ -36,12 +36,14 @@
             bindings = <&kp ESCAPE>;
             key-positions = <3 4>;
             require-prior-idle-ms = <100>;
+            layers = <0>;
         };
 
         tab {
             bindings = <&kp TAB>;
             key-positions = <15 16>;
             require-prior-idle-ms = <100>;
+            layers = <0>;
         };
     };
 
