@@ -109,10 +109,10 @@
 
         winSC {
             bindings = <
-&minimize  &none      &none      &kp LG(LS(S))      &kp DELETE  &none            &none  &none  &none  &none  &none  &none
-&none      &kp LC(A)  &kp LC(X)  &kp LC(C)          &kp LC(V)   &kp BACKSPACE    &none  &none  &none  &none  &none  &none
-&none      &kp LC(Z)  &none      &kp LC(BACKSPACE)  &kp LG(D)   &none            &none  &none  &none  &none  &none  &none
-                                 &none              &none       &none            &none  &none  &none
+&none  &minimize  &none      &kp LG(LS(S))      &kp DELETE  &none            &none  &none  &none  &none  &none  &none
+&none  &kp LC(A)  &kp LC(X)  &kp LC(C)          &kp LC(V)   &kp BACKSPACE    &none  &none  &none  &none  &none  &none
+&none  &kp LC(Z)  &none      &kp LC(BACKSPACE)  &kp LG(D)   &none            &none  &none  &none  &none  &none  &none
+                             &none              &none       &none            &none  &none  &none
             >;
         };
 
@@ -127,19 +127,19 @@
 
         num {
             bindings = <
-&kp ESCAPE      &none  &none  &none     &none     &none        &kp PLUS   &kp N7   &kp N8     &kp N9  &kp STAR   &kp BSPC
-&mt LSHIFT TAB  &none  &none  &none     &none     &none        &kp MINUS  &kp N4   &kp N5     &kp N6  &kp SLASH  &kp DEL
-&kp LCTRL       &none  &none  &none     &none     &none        &kp N0     &kp N1   &kp N2     &kp N3  &kp EQUAL  &kp RET
-                              &kp LGUI  &kp LALT  &kp SPACE    &none      &kp DOT  &kp ENTER
+&none  &none      &none     &none      &none         &none        &kp PLUS   &kp N7   &kp N8     &kp N9  &kp STAR   &kp BSPC
+&none  &kp LSHFT  &kp LALT  &kp LCTRL  &kp LEFT_GUI  &none        &kp MINUS  &kp N4   &kp N5     &kp N6  &kp SLASH  &kp DEL
+&none  &none      &none     &none      &none         &none        &kp N0     &kp N1   &kp N2     &kp N3  &kp EQUAL  &kp RET
+                            &kp LGUI   &kp LALT      &kp SPACE    &none      &kp DOT  &kp ENTER
             >;
         };
 
         nav-media {
             bindings = <
-&kp ESCAPE      &none  &none  &none     &none     &none        &kp C_VOL_UP  &kp PG_UP   &kp UP       &kp PG_DN   &kp C_MUTE  &kp BSPC
-&mt LSHIFT TAB  &none  &none  &none     &none     &none        &kp HOME      &kp LEFT    &kp DOWN     &kp RIGHT   &kp END     &kp DEL
-&kp LCTRL       &none  &none  &none     &none     &none        &kp C_VOL_DN  &kp C_PREV  &kp C_PLAY   &kp C_NEXT  &kp RCTRL   &kp RSHIFT
-                              &kp LGUI  &kp LALT  &kp SPACE    &kp SPACE     &none       &kp K_CMENU
+&none  &none      &none     &none      &none         &none        &kp C_VOL_UP  &kp PG_UP   &kp UP       &kp PG_DN   &kp C_MUTE  &kp BSPC
+&none  &kp LSHFT  &kp LALT  &kp LCTRL  &kp LEFT_GUI  &none        &kp HOME      &kp LEFT    &kp DOWN     &kp RIGHT   &kp END     &kp DEL
+&none  &none      &none     &none      &none         &none        &kp C_VOL_DN  &kp C_PREV  &kp C_PLAY   &kp C_NEXT  &kp RCTRL   &kp RSHIFT
+                            &kp LGUI   &kp LALT      &kp SPACE    &kp SPACE     &none       &kp K_CMENU
             >;
         };
 
