@@ -145,10 +145,10 @@
 
         symb {
             bindings = <
-&kp ESC             &kp EXCL   &kp AT    &kp HASH       &kp DLLR  &kp PRCNT    &kp PLUS   &kp GRAVE  &kp LPAR  &kp RPAR  &kp STAR   &kp BSPC
-&mt LEFT_SHIFT TAB  &kp CARET  &kp AMPS  &kp BACKSLASH  &kp APOS  &none        &kp MINUS  &kp TILDE  &kp LBKT  &kp RBKT  &kp SLASH  &kp DEL
-&kp LCTRL           &kp CARET  &kp AMPS  &kp BACKSLASH  &kp APOS  &none        &kp PIPE   &kp UNDER  &kp LBRC  &kp RBRC  &kp EQUAL  &kp ENTER
-                                         &none          &none     &none        &none      &none      &none
+&none  &kp EXCL   &kp AT    &kp HASH       &kp DLLR  &kp PRCNT    &kp PLUS   &kp GRAVE  &kp LPAR  &kp RPAR  &kp STAR   &kp BSPC
+&none  &kp CARET  &kp AMPS  &kp BACKSLASH  &kp APOS  &none        &kp MINUS  &kp TILDE  &kp LBKT  &kp RBKT  &kp SLASH  &kp DEL
+&none  &kp CARET  &kp AMPS  &kp BACKSLASH  &kp APOS  &none        &kp PIPE   &kp UNDER  &kp LBRC  &kp RBRC  &kp EQUAL  &kp ENTER
+                            &none          &none     &none        &none      &none      &none
             >;
         };
 
