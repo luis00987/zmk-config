@@ -27,28 +27,28 @@
 
         backSpaceR {
             bindings = <&kp BACKSPACE>;
-            key-positions = <19 20>;
+            key-positions = <19 20 21>;
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
 
         esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <13 14>;
+            key-positions = <13 14 15>;
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <3 4>;
+            key-positions = <3 4 2>;
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
 
         backSpaceL {
             bindings = <&kp BACKSPACE>;
-            key-positions = <15 16>;
+            key-positions = <15 16 14>;
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
