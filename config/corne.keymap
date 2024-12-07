@@ -29,19 +29,17 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <19 20>;
             require-prior-idle-ms = <100>;
-            layers = <0>;
         };
 
         escL {
             bindings = <&kp ESCAPE>;
-            key-positions = <3 4>;
+            key-positions = <15 16>;
             require-prior-idle-ms = <100>;
-            layers = <0>;
         };
 
-        questionR {
+        question {
             bindings = <&kp QUESTION>;
-            key-positions = <27 28>;
+            key-positions = <31 32>;
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
@@ -55,27 +53,6 @@
         aphostrope {
             bindings = <&kp SQT>;
             key-positions = <21 20>;
-            layers = <0>;
-        };
-
-        questionL {
-            bindings = <&kp QUESTION>;
-            key-positions = <31 32>;
-            require-prior-idle-ms = <100>;
-            layers = <0>;
-        };
-
-        backspaceL {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <15 16>;
-            require-prior-idle-ms = <100>;
-            layers = <0>;
-        };
-
-        escR {
-            bindings = <&kp ESCAPE>;
-            key-positions = <7 8>;
-            require-prior-idle-ms = <100>;
             layers = <0>;
         };
     };
