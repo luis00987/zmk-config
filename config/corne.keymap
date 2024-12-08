@@ -50,12 +50,6 @@
             layers = <0>;
         };
 
-        aphostrope {
-            bindings = <&kp SQT>;
-            key-positions = <21 20>;
-            layers = <0>;
-        };
-
         combo_escTest {
             timeout-ms = <30>;
             key-positions = <1 2>;
@@ -63,13 +57,15 @@
         };
 
         tab {
-            bindings = <&kp TAB>;
+            bindings = <&kp LEFT_CONTROL>;
             key-positions = <14 15>;
+            timeout-ms = <30>;
         };
 
         tabR {
-            bindings = <&kp TAB>;
+            bindings = <&kp LEFT_CONTROL>;
             key-positions = <20 21>;
+            timeout-ms = <30>;
         };
     };
 
