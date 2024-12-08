@@ -56,9 +56,9 @@
             layers = <0>;
         };
 
-        combo_esc {
+        combo_escTest {
             timeout-ms = <30>;
-            key-positions = <0 16>;
+            key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
     };
