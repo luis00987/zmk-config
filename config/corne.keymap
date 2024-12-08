@@ -75,6 +75,20 @@
             slow-release;
             require-prior-idle-ms = <100>;
         };
+
+        questionL {
+            bindings = <&kp QUESTION>;
+            key-positions = <28 27>;
+            timeout-ms = <35>;
+            require-prior-idle-ms = <100>;
+        };
+
+        escR {
+            bindings = <&kp ESCAPE>;
+            key-positions = <7 8>;
+            timeout-ms = <35>;
+            require-prior-idle-ms = <100>;
+        };
     };
 
     behaviors {
