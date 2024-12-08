@@ -143,7 +143,6 @@
             quick-tap-ms = <(-1)>;
             bindings = <&kp>, <&sk>;
 
-            retro-tap;
             flavor = "tap-preferred";
         };
 
