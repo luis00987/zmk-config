@@ -49,7 +49,7 @@
 
         question {
             bindings = <&kp QUESTION>;
-            key-positions = <31 32>;
+            key-positions = <19 20 21>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
         };
@@ -63,7 +63,7 @@
 
         questionL {
             bindings = <&kp QUESTION>;
-            key-positions = <28 27 26>;
+            key-positions = <14 15 16>;
             timeout-ms = <200>;
         };
 
