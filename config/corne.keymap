@@ -23,6 +23,7 @@
             key-positions = <16 19>;
             bindings = <&mo 2>;
             layers = <0>;
+            slow-release;
         };
 
         backSpaceR {
