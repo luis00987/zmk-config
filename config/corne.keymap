@@ -91,7 +91,7 @@
         };
 
         SKshift {
-            bindings = <&shiftSKShift LEFT_SHIFT LEFT_SHIFT>;
+            bindings = <&sk LEFT_SHIFT>;
             key-positions = <38 39>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
@@ -99,9 +99,16 @@
 
         caps {
             bindings = <&kp CAPS>;
-            key-positions = <12 24>;
+            key-positions = <13 25>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
+        };
+
+        capWords {
+            bindings = <&caps_word>;
+            key-positions = <29 28 30 31>;
+            require-prior-idle-ms = <100>;
+            timeout-ms = <60>;
         };
     };
 
