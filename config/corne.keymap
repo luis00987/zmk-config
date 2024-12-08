@@ -27,7 +27,7 @@
 
         backSpaceR {
             timeout-ms = <20>;
-            bindings = <&kp BACKSPACE>;
+            bindings = <&kp QUESTION>;
             key-positions = <19 20>;
             require-prior-idle-ms = <100>;
         };
@@ -37,14 +37,6 @@
             bindings = <&kp ESCAPE>;
             key-positions = <15 16>;
             require-prior-idle-ms = <100>;
-        };
-
-        question {
-            timeout-ms = <20>;
-            bindings = <&kp QUESTION>;
-            key-positions = <31 32>;
-            require-prior-idle-ms = <100>;
-            layers = <0>;
         };
 
         adjL {
