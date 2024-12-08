@@ -68,12 +68,6 @@
             require-prior-idle-ms = <100>;
         };
 
-        menu {
-            bindings = <&kp K_APP>;
-            key-positions = <34 22>;
-            timeout-ms = <150>;
-        };
-
         backR {
             bindings = <&kp BACKSPACE>;
             key-positions = <19 20>;
