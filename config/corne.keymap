@@ -150,10 +150,10 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             label = "SKSHIFT_MOLAYER";
-            tapping-term-ms = <50>;
+            tapping-term-ms = <100>;
             quick-tap-ms = <(-1)>;
             retro-tap;
-            flavor = "balanced";
+            flavor = "tap-unless-interrupted";
             bindings = <&mo>, <&sk>;
         };
     };
