@@ -26,18 +26,21 @@
         };
 
         backSpaceR {
+timeout-ms = <20>;
             bindings = <&kp BACKSPACE>;
             key-positions = <19 20>;
             require-prior-idle-ms = <100>;
         };
 
         escL {
+timeout-ms = <20>;
             bindings = <&kp ESCAPE>;
             key-positions = <15 16>;
             require-prior-idle-ms = <100>;
         };
 
         question {
+timeout-ms = <20>;
             bindings = <&kp QUESTION>;
             key-positions = <31 32>;
             require-prior-idle-ms = <100>;
@@ -45,12 +48,14 @@
         };
 
         adjL {
+timeout-ms = <20>;
             bindings = <&mo 7>;
             key-positions = <1 5>;
             layers = <0>;
         };
 
         aphostrope {
+timeout-ms = <20>;
             bindings = <&kp SQT>;
             key-positions = <21 20>;
             layers = <0>;
