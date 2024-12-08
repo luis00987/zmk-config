@@ -59,13 +59,15 @@
         tab {
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <14 15>;
-            timeout-ms = <30>;
+            timeout-ms = <25>;
+            slow-release;
         };
 
         tabR {
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <20 21>;
-            timeout-ms = <30>;
+            timeout-ms = <25>;
+            slow-release;
         };
     };
 
