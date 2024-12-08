@@ -26,10 +26,11 @@
         };
 
         backSpaceR {
-            timeout-ms = <20>;
+            timeout-ms = <30>;
             bindings = <&kp BACKSPACE>;
             key-positions = <19 20>;
             require-prior-idle-ms = <100>;
+            slow-release;
         };
 
         escL {
