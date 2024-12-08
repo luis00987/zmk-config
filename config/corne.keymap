@@ -63,7 +63,7 @@
 
         slash {
             bindings = <&kp SLASH>;
-            key-positions = <33 34>;
+            key-positions = <33 32>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
         };
