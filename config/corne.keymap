@@ -53,13 +53,6 @@
             layers = <0>;
         };
 
-        slash {
-            bindings = <&kp SLASH>;
-            key-positions = <32 33>;
-            timeout-ms = <20>;
-            layers = <0>;
-        };
-
         question {
             bindings = <&kp QUESTION>;
             key-positions = <31 32>;
