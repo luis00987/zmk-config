@@ -73,6 +73,20 @@
             key-positions = <34 22>;
             timeout-ms = <150>;
         };
+
+        backR {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <19 20>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+        };
+
+        backL {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <16 15>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+        };
     };
 
     behaviors {
