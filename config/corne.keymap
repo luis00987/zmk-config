@@ -144,7 +144,7 @@
             bindings = <&kp>, <&sk>;
 
             retro-tap;
-            flavor = "balanced";
+            flavor = "tap-preferred";
         };
 
         skShift_Molayer: skShift_Molayer {
