@@ -27,7 +27,7 @@
 
         backSpaceR {
             timeout-ms = <20>;
-            bindings = <&kp QUESTION>;
+            bindings = <&kp BACKSPACE>;
             key-positions = <19 20>;
             require-prior-idle-ms = <100>;
         };
@@ -58,6 +58,13 @@
             key-positions = <32 33>;
             timeout-ms = <20>;
             layers = <0>;
+        };
+
+        question {
+            bindings = <&kp QUESTION>;
+            key-positions = <31 32>;
+            timeout-ms = <20>;
+            require-prior-idle-ms = <100>;
         };
     };
 
