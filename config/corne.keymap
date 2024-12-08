@@ -34,7 +34,7 @@
         };
 
         adjL {
-            timeout-ms = <100>;
+            timeout-ms = <200>;
             bindings = <&mo 7>;
             key-positions = <1 5>;
             layers = <0>;
