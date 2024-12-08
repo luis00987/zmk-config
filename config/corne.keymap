@@ -27,9 +27,9 @@
         };
 
         escL {
-            timeout-ms = <200>;
+            timeout-ms = <40>;
             bindings = <&kp ESCAPE>;
-            key-positions = <3 4 2>;
+            key-positions = <3 4>;
             require-prior-idle-ms = <100>;
         };
 
@@ -47,13 +47,6 @@
             layers = <0>;
         };
 
-        question {
-            bindings = <&kp QUESTION>;
-            key-positions = <19 20 21>;
-            timeout-ms = <35>;
-            require-prior-idle-ms = <100>;
-        };
-
         slash {
             bindings = <&kp SLASH>;
             key-positions = <33 32>;
@@ -61,16 +54,10 @@
             require-prior-idle-ms = <100>;
         };
 
-        questionL {
-            bindings = <&kp QUESTION>;
-            key-positions = <14 15 16>;
-            timeout-ms = <200>;
-        };
-
         escR {
             bindings = <&kp ESCAPE>;
-            key-positions = <7 8 9>;
-            timeout-ms = <200>;
+            key-positions = <7 8>;
+            timeout-ms = <40>;
             require-prior-idle-ms = <100>;
         };
 
@@ -83,7 +70,7 @@
 
         menu {
             bindings = <&kp K_APP>;
-            key-positions = <34 33 32>;
+            key-positions = <34 22>;
             timeout-ms = <150>;
         };
     };
