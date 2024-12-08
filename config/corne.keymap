@@ -91,9 +91,8 @@
 
         menu {
             bindings = <&kp K_APP>;
-            key-positions = <22 34>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <100>;
+            key-positions = <34 33 32>;
+            timeout-ms = <150>;
         };
     };
 
