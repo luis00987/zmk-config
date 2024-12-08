@@ -28,20 +28,14 @@
         backSpaceR {
             bindings = <&kp BACKSPACE>;
             key-positions = <19 20>;
-            require-prior-idle-ms = <100>;
-        };
-
-        escL {
-            bindings = <&kp ESCAPE>;
-            key-positions = <15 16>;
-            require-prior-idle-ms = <100>;
+            timeout-ms = <25>;
         };
 
         question {
             bindings = <&kp QUESTION>;
             key-positions = <31 32>;
-            require-prior-idle-ms = <100>;
             layers = <0>;
+            timeout-ms = <25>;
         };
 
         adjL {
@@ -51,21 +45,49 @@
         };
 
         combo_escTest {
-            timeout-ms = <30>;
-            key-positions = <1 2>;
+            timeout-ms = <25>;
+            key-positions = <4 3>;
             bindings = <&kp ESC>;
         };
 
-        tab {
+        ctrlL {
             bindings = <&kp LEFT_CONTROL>;
-            key-positions = <14 15>;
+            key-positions = <15 16>;
             timeout-ms = <25>;
             slow-release;
         };
 
-        tabR {
+        ctrlR {
             bindings = <&kp LEFT_CONTROL>;
-            key-positions = <20 21>;
+            key-positions = <20 19>;
+            timeout-ms = <25>;
+            slow-release;
+        };
+
+        altL {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <20 19>;
+            timeout-ms = <25>;
+            slow-release;
+        };
+
+        altR {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <15 14>;
+            timeout-ms = <25>;
+            slow-release;
+        };
+
+        winL {
+            bindings = <&kp LEFT_WIN>;
+            key-positions = <14 13>;
+            timeout-ms = <25>;
+            slow-release;
+        };
+
+        winR {
+            bindings = <&kp LEFT_WIN>;
+            key-positions = <22 21>;
             timeout-ms = <25>;
             slow-release;
         };
