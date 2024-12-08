@@ -11,7 +11,7 @@
 
 &sk {
     quick-release;
-    release-after-ms = <600>;
+    release-after-ms = <1000>;
 };
 
 / {
