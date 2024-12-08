@@ -61,7 +61,7 @@
             layers = <0>;
         };
 
-        menu {
+        slash {
             bindings = <&kp SLASH>;
             key-positions = <32 33>;
             timeout-ms = <20>;
