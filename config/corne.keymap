@@ -36,7 +36,7 @@
         escL {
             timeout-ms = <35>;
             bindings = <&kp ESCAPE>;
-            key-positions = <15 16>;
+            key-positions = <3 4>;
             require-prior-idle-ms = <100>;
         };
 
@@ -65,6 +65,14 @@
             bindings = <&kp SLASH>;
             key-positions = <33 32>;
             timeout-ms = <35>;
+            require-prior-idle-ms = <100>;
+        };
+
+        backspaceL {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <16 15>;
+            timeout-ms = <35>;
+            slow-release;
             require-prior-idle-ms = <100>;
         };
     };
