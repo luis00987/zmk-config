@@ -58,6 +58,7 @@
 
         combo_escTest {
             timeout-ms = <30>;
+            hold-term-ms = <175>;    
             key-positions = <1 2>;
             bindings = <&kp ESC>;
         };
