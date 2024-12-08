@@ -106,6 +106,9 @@
             tapping-term-ms = <50>;
             quick-tap-ms = <(-1)>;
             bindings = <&kp>, <&sk>;
+
+            retro-tap;
+            flavor = "balanced";
         };
     };
 
