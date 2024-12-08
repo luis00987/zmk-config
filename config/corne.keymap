@@ -26,14 +26,6 @@
             slow-release;
         };
 
-        backSpaceR {
-            timeout-ms = <35>;
-            bindings = <&kp BACKSPACE>;
-            key-positions = <19 20>;
-            require-prior-idle-ms = <100>;
-            slow-release;
-        };
-
         escL {
             timeout-ms = <35>;
             bindings = <&kp ESCAPE>;
@@ -66,14 +58,6 @@
             bindings = <&kp SLASH>;
             key-positions = <33 32>;
             timeout-ms = <35>;
-            require-prior-idle-ms = <100>;
-        };
-
-        backspaceL {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <16 15>;
-            timeout-ms = <35>;
-            slow-release;
             require-prior-idle-ms = <100>;
         };
 
