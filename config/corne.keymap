@@ -26,21 +26,21 @@
         };
 
         backSpaceR {
-timeout-ms = <20>;
+            timeout-ms = <20>;
             bindings = <&kp BACKSPACE>;
             key-positions = <19 20>;
             require-prior-idle-ms = <100>;
         };
 
         escL {
-timeout-ms = <20>;
+            timeout-ms = <20>;
             bindings = <&kp ESCAPE>;
             key-positions = <15 16>;
             require-prior-idle-ms = <100>;
         };
 
         question {
-timeout-ms = <20>;
+            timeout-ms = <20>;
             bindings = <&kp QUESTION>;
             key-positions = <31 32>;
             require-prior-idle-ms = <100>;
@@ -48,14 +48,14 @@ timeout-ms = <20>;
         };
 
         adjL {
-timeout-ms = <20>;
+            timeout-ms = <20>;
             bindings = <&mo 7>;
             key-positions = <1 5>;
             layers = <0>;
         };
 
         aphostrope {
-timeout-ms = <20>;
+            timeout-ms = <20>;
             bindings = <&kp SQT>;
             key-positions = <21 20>;
             layers = <0>;
@@ -128,7 +128,7 @@ timeout-ms = <20>;
             bindings = <
 &none  &none      &none      &kp LG(LS(NUMBER_4))  &none      &kp BACKSPACE    &none  &none  &none  &none  &none  &none
 &none  &kp LG(A)  &kp LG(X)  &kp LG(C)             &kp LG(V)  &kp DEL          &none  &none  &none  &none  &none  &none
-&none  &kp LG(Z)  &none      &none                 &kp LG(H)  &none            &none  &none  &none  &none  &none  &none
+&none  &kp LG(Z)  &none      &none                 &kp LG(H)  &kp ENTER        &none  &none  &none  &none  &none  &none
                              &none                 &none      &none            &none  &none  &none
             >;
         };
