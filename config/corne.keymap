@@ -57,9 +57,19 @@
         };
 
         combo_escTest {
-            timeout-ms = <30>;   
+            timeout-ms = <30>;
             key-positions = <1 2>;
             bindings = <&kp ESC>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <14 15>;
+        };
+
+        tabR {
+            bindings = <&kp TAB>;
+            key-positions = <20 21>;
         };
     };
 
