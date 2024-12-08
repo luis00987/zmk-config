@@ -26,7 +26,7 @@
         };
 
         backSpaceR {
-            timeout-ms = <30>;
+            timeout-ms = <35>;
             bindings = <&kp BACKSPACE>;
             key-positions = <19 20>;
             require-prior-idle-ms = <100>;
