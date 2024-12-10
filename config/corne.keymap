@@ -18,19 +18,12 @@
     combos {
         compatible = "zmk,combos";
 
-        IpadShorcut {
-            timeout-ms = <35>;
-            key-positions = <16 19>;
-            bindings = <&mo 2>;
-            layers = <0>;
-            slow-release;
-        };
-
         escL {
             timeout-ms = <40>;
             bindings = <&kp ESCAPE>;
-            key-positions = <3 4>;
+            key-positions = <3 2>;
             require-prior-idle-ms = <100>;
+            layers = <0>;
         };
 
         adjL {
@@ -43,22 +36,8 @@
         aphostrope {
             timeout-ms = <35>;
             bindings = <&kp SQT>;
-            key-positions = <21 20>;
+            key-positions = <8 9>;
             layers = <0>;
-        };
-
-        slash {
-            bindings = <&kp SLASH>;
-            key-positions = <33 32>;
-            timeout-ms = <35>;
-            require-prior-idle-ms = <100>;
-        };
-
-        escR {
-            bindings = <&kp ESCAPE>;
-            key-positions = <7 8>;
-            timeout-ms = <40>;
-            require-prior-idle-ms = <100>;
         };
 
         SKshift {
@@ -66,6 +45,7 @@
             key-positions = <38 39>;
             timeout-ms = <150>;
             require-prior-idle-ms = <100>;
+            layers = <0>;
         };
 
         backR {
@@ -73,6 +53,7 @@
             key-positions = <19 20>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
+            layers = <0 5 3 4>;
         };
 
         backL {
@@ -80,6 +61,50 @@
             key-positions = <16 15>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
+            layers = <0 5 3 4>;
+        };
+
+        questionR {
+            bindings = <&kp QUESTION>;
+            key-positions = <32 33>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
+        };
+
+        wordDel {
+            bindings = <&kp LC(BACKSPACE)>;
+            key-positions = <27 28>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
+            layers = <0 5 3 4>;
+        };
+
+        delR {
+            bindings = <&kp DELETE>;
+            key-positions = <7 8>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
+            layers = <0 5 3 4>;
+        };
+
+        undo {
+            bindings = <&kp LC(Z)>;
+            key-positions = <27 26>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
+            layers = <0 5 3 4>;
+        };
+
+        delL {
+            bindings = <&kp DELETE>;
+            key-positions = <4 3>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+            layers = <0 5 3 4>;
         };
     };
 
@@ -134,6 +159,13 @@
             flavor = "tap-unless-interrupted";
             bindings = <&mo>, <&sk>;
         };
+
+        spaceWinIpad: spaceWinIpad {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SPACEWINIPAD";
+            #binding-cells = <0>;
+            bindings = <&lt 1 SPACE>, <&lt 2 SPACE>;
+        };
     };
 
     macros {
@@ -151,10 +183,10 @@
 
         L0 {
             bindings = <
-&none  &kp Q            &kp W            &kp E                &kp R              &kp T          &kp Y        &kp U              &kp I                &kp O            &kp P                    &none
-&none  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G          &kp H        &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_GUI SEMICOLON  &none
-&none  &kp Z            &kp X            &kp C                &kp V              &kp B          &kp N        &kp M              &kp COMMA            &kp DOT          &kp QUESTION             &none
-                                         &kp LEFT_GUI         &lt 6 TAB          &lt 1 SPACE    &lt 3 SPACE  &lt 4 RET          &lt 5 K_APP
+&none  &kp Q            &kp W            &kp E                &kp R              &kp T            &kp Y        &kp U              &kp I                &kp O            &kp P                    &none
+&none  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G            &kp H        &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_GUI SEMICOLON  &none
+&none  &kp Z            &kp X            &kp C                &kp V              &kp B            &kp N        &kp M              &kp COMMA            &kp DOT          &kp SLASH                &none
+                                         &kp LEFT_GUI         &lt 6 TAB          &spaceWinIpad    &lt 3 SPACE  &lt 4 RET          &lt 5 K_APP
             >;
         };
 
