@@ -89,15 +89,6 @@
             layers = <0>;
             layers = <0 5 3 4>;
         };
-
-        undo {
-            bindings = <&kp LC(Z)>;
-            key-positions = <27 26>;
-            timeout-ms = <40>;
-            require-prior-idle-ms = <100>;
-            layers = <0>;
-            layers = <0 5 3 4>;
-        };
     };
 
     behaviors {
