@@ -20,7 +20,7 @@
 
         escL {
             timeout-ms = <40>;
-            bindings = <&kp DELETE>;
+            bindings = <&kp ESCAPE>;
             key-positions = <3 4>;
             require-prior-idle-ms = <100>;
             layers = <0>;
@@ -88,13 +88,6 @@
             require-prior-idle-ms = <100>;
             layers = <0>;
             layers = <0 5 3 4>;
-        };
-
-        esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <2 3>;
-            timeout-ms = <35>;
-            layers = <0>;
         };
     };
 
