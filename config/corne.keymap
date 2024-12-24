@@ -40,7 +40,7 @@
             layers = <0>;
         };
 
-        SKshift {
+        ipadSC {
             bindings = <&mo 2>;
             key-positions = <38 39>;
             timeout-ms = <150>;
@@ -87,6 +87,14 @@
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
             layers = <0>;
+            layers = <0 5 3 4>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <32 31>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
             layers = <0 5 3 4>;
         };
     };
@@ -167,28 +175,28 @@
 
         winSC {
             bindings = <
-&none  &minimize  &none      &kp LG(LS(S))      &none      &none    &none  &none  &none  &none  &none  &none
-&none  &kp LC(A)  &kp LC(X)  &kp LC(C)          &kp LC(V)  &none    &none  &none  &none  &none  &none  &none
-&none  &kp LC(Z)  &none      &kp LC(BACKSPACE)  &kp LG(D)  &none    &none  &none  &none  &none  &none  &none
-                             &none              &none      &none    &none  &none  &none
+&none  &minimize  &kp LG(TAB)  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &none    &none  &none  &none  &none  &none  &none
+&none  &kp LC(A)  &kp LC(X)    &kp LC(C)         &kp LC(V)          &none    &none  &none  &none  &none  &none  &none
+&none  &kp LC(Z)  &none        &kp LG(LS(S))     &kp LG(D)          &none    &none  &none  &none  &none  &none  &none
+                               &none             &none              &none    &none  &none  &none
             >;
         };
 
         ipadSC {
             bindings = <
-&none  &none      &none      &kp LG(LS(NUMBER_4))  &none      &none    &none  &none  &none  &none  &none  &none
+&none  &none      &none      &none                 &none      &none    &none  &none  &none  &none  &none  &none
 &none  &kp LG(A)  &kp LG(X)  &kp LG(C)             &kp LG(V)  &none    &none  &none  &none  &none  &none  &none
-&none  &kp LG(Z)  &none      &none                 &kp LG(H)  &none    &none  &none  &none  &none  &none  &none
+&none  &kp LG(Z)  &none      &kp LG(LS(NUMBER_4))  &kp LG(H)  &none    &none  &none  &none  &none  &none  &none
                              &none                 &none      &none    &none  &none  &none
             >;
         };
 
         num {
             bindings = <
-&none  &none         &none     &none      &none           &none    &kp PLUS   &kp N7  &kp N8  &kp N9  &kp STAR   &none
-&none  &kp LEFT_GUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &none    &kp MINUS  &kp N4  &kp N5  &kp N6  &kp SLASH  &none
-&none  &none         &none     &none      &none           &none    &kp N0     &kp N1  &kp N2  &kp N3  &kp EQUAL  &none
-                               &none      &none           &none    &none      &none   &none
+&none  &none         &none     &none      &none           &none    &kp PLUS   &kp N7      &kp N8  &kp N9  &kp STAR   &none
+&none  &kp LEFT_GUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &none    &kp MINUS  &kp N4      &kp N5  &kp N6  &kp SLASH  &none
+&none  &none         &none     &none      &none           &none    &kp N0     &kp N1      &kp N2  &kp N3  &kp EQUAL  &none
+                               &none      &none           &none    &none      &kp PERIOD  &none
             >;
         };
 
@@ -203,14 +211,14 @@
 
         symb {
             bindings = <
-&none  &kp EXCL      &kp AT    &kp HASH       &kp DLLR        &none    &kp PLUS   &kp GRAVE  &kp LPAR  &kp RPAR  &kp STAR   &none
-&none  &kp LEFT_GUI  &kp LALT  &kp LCTRL      &kp LEFT_SHIFT  &none    &kp MINUS  &kp TILDE  &kp LBKT  &kp RBKT  &kp SLASH  &none
-&none  &kp CARET     &kp AMPS  &kp BACKSLASH  &kp PERCENT     &none    &kp PIPE   &kp UNDER  &kp LBRC  &kp RBRC  &kp EQUAL  &none
-                               &none          &none           &none    &none      &none      &none
+&none  &kp EXCL      &kp AT    &kp HASH       &kp DLLR        &none    &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GRAVE  &kp STAR   &none
+&none  &kp LEFT_GUI  &kp LALT  &kp LCTRL      &kp LEFT_SHIFT  &none    &kp MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER  &kp SLASH  &none
+&none  &kp CARET     &kp AMPS  &kp BACKSLASH  &kp PERCENT     &none    &kp PIPE   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp TILDE  &kp EQUAL  &none
+                               &none          &none           &none    &none      &none                 &none
             >;
         };
 
-        Fn {
+        fn {
             bindings = <
 &none  &kp F1  &kp F2   &kp F3   &kp F4   &none    &none  &none           &none      &none     &none         &none
 &none  &kp F5  &kp F6   &kp F7   &kp F8   &none    &none  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT  &kp LEFT_GUI  &none
