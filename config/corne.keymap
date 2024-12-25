@@ -105,6 +105,14 @@
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
+
+        delL {
+            bindings = <&kp DEL>;
+            key-positions = <16 17>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
+        };
     };
 
     behaviors {
