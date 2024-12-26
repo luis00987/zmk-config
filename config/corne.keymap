@@ -200,6 +200,12 @@
             bindings = <&kp LG(LC(LEFT_ARROW)) &kp LC(LG(LEFT_ARROW)) &kp LC(LG(LEFT)) &kp LC(LG(LEFT)) &kp LG(LC(LEFT)) &kp LC(LG(RIGHT))>;
             label = "DT2";
         };
+        dt3: dt3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(LEFT_ARROW)) &kp LC(LG(LEFT_ARROW)) &kp LC(LG(LEFT)) &kp LC(LG(LEFT)) &kp LG(LC(LEFT)) &kp LC(LG(RIGHT)) &kp LC(LG(RIGHT)) >;
+            label = "DT3";
+        };
     };
 
     keymap {
