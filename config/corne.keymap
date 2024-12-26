@@ -182,28 +182,28 @@
         dt1: dt1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LG(LEFT)) &kp LC(LG(LEFT)) &kp LG(LC(LEFT))>;
+            bindings = <&kp LC(LG(LEFT)) , <&macro_wait_time 5>,&kp LC(LG(LEFT)) , <&macro_wait_time 5>,&kp LG(LC(LEFT))>;
             label = "DT1";
         };
 
         dt2: dt2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LG(LEFT)) &kp LC(LG(LEFT)) &kp LG(LC(LEFT)) &kp LC(LG(RIGHT))>;
+            bindings = <&kp LC(LG(LEFT)) , <&macro_wait_time 5>,&kp LC(LG(LEFT)) , <&macro_wait_time 5>,&kp LG(LC(LEFT)) , <&macro_wait_time 5>,&kp LC(LG(RIGHT))>;
             label = "DT2";
         };
 
         dt3: dt3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LG(LEFT)) &kp LC(LG(LEFT)) &kp LG(LC(LEFT)) &kp LC(LG(RIGHT)) &kp LC(LG(RIGHT))>;
+            bindings = <&kp LC(LG(LEFT)) , <&macro_wait_time 5>,&kp LC(LG(LEFT)) , <&macro_wait_time 5>,&kp LG(LC(LEFT)) , <&macro_wait_time 5>,&kp LC(LG(RIGHT)) , <&macro_wait_time 5>,&kp LC(LG(RIGHT))>;
             label = "DT3";
         };
 
         dt4: dt4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LG(LEFT)) &kp LC(LG(LEFT)) &kp LG(LC(LEFT)) &kp LC(LG(RIGHT)) &kp LC(LG(RIGHT)) &kp LC(LG(RIGHT))>;
+            bindings = <&kp LC(LG(LEFT)) , <&macro_wait_time 5>,&kp LC(LG(LEFT)) , <&macro_wait_time 5>,&kp LG(LC(LEFT)) , <&macro_wait_time 5>,&kp LC(LG(RIGHT)) , <&macro_wait_time 5>,&kp LC(LG(RIGHT)) , <&macro_wait_time 5>,&kp LC(LG(RIGHT))>;
             label = "DT4";
         };
     };
