@@ -186,6 +186,13 @@
 
             label = "MINIMIZE";
         };
+
+        dt1: dt1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(LEFT_ARROW)) &kp LC(LG(LEFT_ARROW)) &kp LC(LG(LEFT)) &kp LC(LG(LEFT))>;
+            label = "DT1";
+        };
     };
 
     keymap {
