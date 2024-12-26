@@ -200,10 +200,11 @@
             bindings = <&kp LG(LC(LEFT_ARROW)) &kp LC(LG(LEFT_ARROW)) &kp LC(LG(LEFT)) &kp LC(LG(LEFT)) &kp LG(LC(LEFT)) &kp LC(LG(RIGHT))>;
             label = "DT2";
         };
+
         dt3: dt3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LC(LEFT_ARROW)) &kp LC(LG(LEFT_ARROW)) &kp LC(LG(LEFT)) &kp LC(LG(LEFT)) &kp LG(LC(LEFT)) &kp LC(LG(RIGHT)) &kp LC(LG(RIGHT)) >;
+            bindings = <&kp LG(LC(LEFT_ARROW)) &kp LC(LG(LEFT_ARROW)) &kp LC(LG(LEFT)) &kp LC(LG(LEFT)) &kp LG(LC(LEFT)) &kp LC(LG(RIGHT)) &kp LC(LG(RIGHT))>;
             label = "DT3";
         };
     };
@@ -223,7 +224,7 @@
         winSC {
             bindings = <
 &none  &kp LG(LC(D))  &kp LG(TAB)    &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp LG(LC(F4))    &kp C_BRI_UP   &none  &none  &none  &none  &none
-&none  &kp LC(A)      &kp LC(X)      &kp LC(C)         &kp LC(V)          &none             &none          &dt1   &dt2   &none  &none  &none
+&none  &kp LC(A)      &kp LC(X)      &kp LC(C)         &kp LC(V)          &none             &none          &dt1   &dt2   &dt3   &none  &none
 &none  &kp LC(Z)      &kp C_AC_HOME  &kp LG(LS(S))     &kp LG(D)          &kp LA(F4)        &kp C_BRI_DEC  &none  &none  &none  &none  &none
                                      &none             &none              &none             &none          &none  &none
             >;
