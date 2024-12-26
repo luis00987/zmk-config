@@ -184,9 +184,9 @@
             #binding-cells = <0>;
             bindings =
                 <&kp LC(LG(LEFT))>,
-                <&macro_wait_time 5>,
+                <&macro_wait_time 15>,
                 <&kp LC(LG(LEFT))>,
-                <&macro_wait_time 5>,
+                <&macro_wait_time 15>,
                 <&kp LG(LC(LEFT))>;
 
             label = "DT1";
@@ -197,11 +197,11 @@
             #binding-cells = <0>;
             bindings =
                 <&kp LC(LG(LEFT))>,
-                <&macro_wait_time 5>,
+                <&macro_wait_time 15>,
                 <&kp LC(LG(LEFT))>,
-                <&macro_wait_time 5>,
+                <&macro_wait_time 15>,
                 <&kp LG(LC(LEFT))>,
-                <&macro_wait_time 5>,
+                <&macro_wait_time 15>,
                 <&kp LC(LG(RIGHT))>;
 
             label = "DT2";
@@ -212,13 +212,13 @@
             #binding-cells = <0>;
             bindings =
                 <&kp LC(LG(LEFT))>,
-                <&macro_wait_time 5>,
+                <&macro_wait_time 15>,
                 <&kp LC(LG(LEFT))>,
-                <&macro_wait_time 5>,
+                <&macro_wait_time 15>,
                 <&kp LG(LC(LEFT))>,
-                <&macro_wait_time 5>,
+                <&macro_wait_time 15>,
                 <&kp LC(LG(RIGHT))>,
-                <&macro_wait_time 5>,
+                <&macro_wait_time 15>,
                 <&kp LC(LG(RIGHT))>;
 
             label = "DT3";
@@ -229,15 +229,15 @@
             #binding-cells = <0>;
             bindings =
                 <&kp LC(LG(LEFT))>,
-                <&macro_wait_time 5>,
+                <&macro_wait_time 15>,
                 <&kp LC(LG(LEFT))>,
-                <&macro_wait_time 5>,
+                <&macro_wait_time 15>,
                 <&kp LG(LC(LEFT))>,
-                <&macro_wait_time 5>,
+                <&macro_wait_time 15>,
                 <&kp LC(LG(RIGHT))>,
-                <&macro_wait_time 5>,
+                <&macro_wait_time 15>,
                 <&kp LC(LG(RIGHT))>,
-                <&macro_wait_time 5>,
+                <&macro_wait_time 15>,
                 <&kp LC(LG(RIGHT))>;
 
             label = "DT4";
