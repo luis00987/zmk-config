@@ -206,7 +206,7 @@
 &none  &none         &none         &none      &none           &none    &none  &none           &none       &none              &none         &none
 &none  &kp LEFT_GUI  &kp LALT      &kp LCTRL  &kp LEFT_SHIFT  &none    &none  &kp LEFT_SHIFT  &kp LCTRL   &kp LALT           &kp LEFT_WIN  &none
 &none  &kp ESC       &kp LC(BSPC)  &kp DEL    &kp BSPC        &none    &none  &kp BSPC        &kp DELETE  &kp LC(BACKSPACE)  &kp SQT       &none
-                                   &mo 1      &none           &none    &none  &none           &mo 1
+                                   &none      &mo 1           &none    &none  &mo 1           &none
             >;
         };
 
