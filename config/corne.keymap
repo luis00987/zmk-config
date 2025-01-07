@@ -107,7 +107,7 @@
         };
 
         delL {
-            bindings = <&kp LC(BACKSPACE)>;
+            bindings = <&kp DELETE>;
             key-positions = <17 16>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
