@@ -4,11 +4,6 @@
 #define ZMK_BEHAVIORS_KEEP_MT
 #define ZMK_BEHAVIORS_KEEP_KT
 
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
-
 &sk {
     quick-release;
     release-after-ms = <1000>;
@@ -354,6 +349,7 @@
         };
     };
 };
+
 #undef ZMK_BEHAVIORS_KEEP_ALL
 
 #define ZMK_BEHAVIORS_KEEP_SK
@@ -618,7 +614,7 @@
 
         L0 {
             bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R      &kp T                         &kp Y        &kp U      &kp I      &kp O    &kp P      &none
+&none  &kp F  &kp W  &kp E  &kp R      &kp T                         &kp Y        &kp U      &kp I      &kp O    &kp P      &none
 &none  &kp A  &kp S  &kp D  &kp F      &kp G                         &kp H        &kp J      &kp K      &kp L    &kp SEMI   &none
 &none  &kp Z  &kp X  &kp C  &kp V      &kp B                         &kp N        &kp M      &kp COMMA  &kp DOT  &kp SLASH  &none
                      &none  &lt 1 TAB  &stickShiftlt 2 LEFT_SHIFT    &lt 4 SPACE  &lt 5 RET  &none
