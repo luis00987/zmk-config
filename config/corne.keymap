@@ -23,21 +23,18 @@
             bindings = <&kp ESCAPE>;
             key-positions = <3 4>;
             require-prior-idle-ms = <100>;
-            
         };
 
         adjL {
             timeout-ms = <300>;
             bindings = <&mo 7>;
             key-positions = <1 5>;
-            
         };
 
         aphostrope {
             timeout-ms = <35>;
             bindings = <&kp SQT>;
             key-positions = <8 9>;
-            
         };
 
         backR {
@@ -45,7 +42,6 @@
             key-positions = <19 20>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            
         };
 
         backL {
@@ -53,7 +49,6 @@
             key-positions = <16 15>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            
         };
 
         questionR {
@@ -61,7 +56,6 @@
             key-positions = <32 33>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            
         };
 
         wordDel {
@@ -69,15 +63,13 @@
             key-positions = <14 15>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            
         };
 
         delR {
             bindings = <&kp DELETE>;
-            key-positions = <7 8>;
+            key-positions = <31 32>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            
         };
 
         wordDelR {
@@ -85,31 +77,26 @@
             key-positions = <20 21>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            
         };
 
-        shift {
+        capsWord {
             bindings = <&caps_word>;
             key-positions = <38 39>;
             timeout-ms = <150>;
             require-prior-idle-ms = <100>;
-            
-        };
-
-        miPc {
-            bindings = <&kp LG(E)>;
-            key-positions = <13 25>;
-            timeout-ms = <40>;
-            require-prior-idle-ms = <100>;
-            
         };
 
         delL {
             bindings = <&kp DELETE>;
-            key-positions = <17 16>;
+            key-positions = <27 28>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-           
+        };
+
+        toSym {
+            bindings = <&mo 5>;
+            key-positions = <37 40>;
+            timeout-ms = <300>;
         };
     };
 
@@ -255,19 +242,19 @@
 
         testLayer {
             bindings = <
-&none  &kp Q  &kp W  &kp E             &kp R      &kp T                         &kp Y        &kp U      &kp I            &kp O    &kp P      &none
-&none  &kp A  &kp S  &kp D             &kp F      &kp G                         &kp H        &kp J      &kp K            &kp L    &kp SEMI   &none
-&none  &kp Z  &kp X  &kp C             &kp V      &kp B                         &kp N        &kp M      &kp COMMA        &kp DOT  &kp SLASH  &none
-                     &keyrepeatMo 6 0  &lt 1 TAB  &stickShiftlt 2 LEFT_SHIFT    &lt 3 SPACE  &lt 4 RET  &lt 5 BACKSPACE
+&none  &kp Q  &kp W  &kp E  &kp R      &kp T                         &kp Y        &kp U      &kp I      &kp O    &kp P      &none
+&none  &kp A  &kp S  &kp D  &kp F      &kp G                         &kp H        &kp J      &kp K      &kp L    &kp SEMI   &none
+&none  &kp Z  &kp X  &kp C  &kp V      &kp B                         &kp N        &kp M      &kp COMMA  &kp DOT  &kp SLASH  &none
+                     &none  &lt 1 TAB  &stickShiftlt 2 LEFT_SHIFT    &lt 3 SPACE  &lt 4 RET  &none
             >;
         };
 
         L0_2 {
             bindings = <
-&trans  &trans        &trans    &trans     &trans     &trans    &trans  &trans     &trans     &trans    &trans        &trans
-&trans  &sk LEFT_GUI  &sk LALT  &sk LCTRL  &sk LSHFT  &trans    &trans  &sk LSHFT  &sk LCTRL  &sk LALT  &sk LEFT_GUI  &trans
-&trans  &kp LEFT_GUI  &trans    &trans     &trans     &trans    &trans  &trans     &trans     &trans    &kp LEFT_GUI  &trans
-                                &trans     &trans     &trans    &trans  &trans     &trans
+&none  &none         &none     &none      &none      &none    &none  &none      &none      &none     &none         &none
+&none  &sk LEFT_GUI  &sk LALT  &sk LCTRL  &sk LSHFT  &none    &none  &sk LSHFT  &sk LCTRL  &sk LALT  &sk LEFT_GUI  &none
+&none  &kp LEFT_GUI  &none     &none      &none      &none    &none  &none      &none      &none     &kp LEFT_GUI  &none
+                               &none      &none      &none    &none  &none      &none
             >;
         };
 
