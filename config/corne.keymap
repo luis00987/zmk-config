@@ -191,77 +191,6 @@
     };
 
     macros {
-        minimize: minimize {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(SPACE)>, <&macro_wait_time 200>, <&kp N>;
-
-            label = "MINIMIZE";
-        };
-
-        dt1: dt1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LC(LG(LEFT))>,
-                <&macro_wait_time 25>,
-                <&kp LC(LG(LEFT))>,
-                <&macro_wait_time 25>,
-                <&kp LG(LC(LEFT))>;
-
-            label = "DT1";
-        };
-
-        dt2: dt2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LC(LG(LEFT))>,
-                <&macro_wait_time 25>,
-                <&kp LC(LG(LEFT))>,
-                <&macro_wait_time 25>,
-                <&kp LG(LC(LEFT))>,
-                <&macro_wait_time 25>,
-                <&kp LC(LG(RIGHT))>;
-
-            label = "DT2";
-        };
-
-        dt3: dt3 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LC(LG(LEFT))>,
-                <&macro_wait_time 25>,
-                <&kp LC(LG(LEFT))>,
-                <&macro_wait_time 25>,
-                <&kp LG(LC(LEFT))>,
-                <&macro_wait_time 25>,
-                <&kp LC(LG(RIGHT))>,
-                <&macro_wait_time 25>,
-                <&kp LC(LG(RIGHT))>;
-
-            label = "DT3";
-        };
-
-        dt4: dt4 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LC(LG(LEFT))>,
-                <&macro_wait_time 25>,
-                <&kp LC(LG(LEFT))>,
-                <&macro_wait_time 25>,
-                <&kp LG(LC(LEFT))>,
-                <&macro_wait_time 25>,
-                <&kp LC(LG(RIGHT))>,
-                <&macro_wait_time 25>,
-                <&kp LC(LG(RIGHT))>,
-                <&macro_wait_time 25>,
-                <&kp LC(LG(RIGHT))>;
-
-            label = "DT4";
-        };
     };
 
     keymap {
@@ -535,86 +464,12 @@
         };
     };
 
-    macros {
-        minimize: minimize {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(SPACE)>, <&macro_wait_time 200>, <&kp N>;
-
-            label = "MINIMIZE";
-        };
-
-        dt1: dt1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LC(LG(LEFT))>,
-                <&macro_wait_time 25>,
-                <&kp LC(LG(LEFT))>,
-                <&macro_wait_time 25>,
-                <&kp LG(LC(LEFT))>;
-
-            label = "DT1";
-        };
-
-        dt2: dt2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LC(LG(LEFT))>,
-                <&macro_wait_time 25>,
-                <&kp LC(LG(LEFT))>,
-                <&macro_wait_time 25>,
-                <&kp LG(LC(LEFT))>,
-                <&macro_wait_time 25>,
-                <&kp LC(LG(RIGHT))>;
-
-            label = "DT2";
-        };
-
-        dt3: dt3 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LC(LG(LEFT))>,
-                <&macro_wait_time 25>,
-                <&kp LC(LG(LEFT))>,
-                <&macro_wait_time 25>,
-                <&kp LG(LC(LEFT))>,
-                <&macro_wait_time 25>,
-                <&kp LC(LG(RIGHT))>,
-                <&macro_wait_time 25>,
-                <&kp LC(LG(RIGHT))>;
-
-            label = "DT3";
-        };
-
-        dt4: dt4 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LC(LG(LEFT))>,
-                <&macro_wait_time 25>,
-                <&kp LC(LG(LEFT))>,
-                <&macro_wait_time 25>,
-                <&kp LG(LC(LEFT))>,
-                <&macro_wait_time 25>,
-                <&kp LC(LG(RIGHT))>,
-                <&macro_wait_time 25>,
-                <&kp LC(LG(RIGHT))>,
-                <&macro_wait_time 25>,
-                <&kp LC(LG(RIGHT))>;
-
-            label = "DT4";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
         L0 {
             bindings = <
-&none  &kp F  &kp W  &kp E  &kp R      &kp T                         &kp Y        &kp U      &kp I      &kp O    &kp P      &none
+&none  &kp Q  &kp W  &kp E  &kp R      &kp T                         &kp Y        &kp U      &kp I      &kp O    &kp P      &none
 &none  &kp A  &kp S  &kp D  &kp F      &kp G                         &kp H        &kp J      &kp K      &kp L    &kp SEMI   &none
 &none  &kp Z  &kp X  &kp C  &kp V      &kp B                         &kp N        &kp M      &kp COMMA  &kp DOT  &kp SLASH  &none
                      &none  &lt 1 TAB  &stickShiftlt 2 LEFT_SHIFT    &lt 4 SPACE  &lt 5 RET  &none
