@@ -23,21 +23,21 @@
             bindings = <&kp ESCAPE>;
             key-positions = <3 4>;
             require-prior-idle-ms = <100>;
-            layers = <9>;
+            
         };
 
         adjL {
             timeout-ms = <300>;
             bindings = <&mo 7>;
             key-positions = <1 5>;
-            layers = <9>;
+            
         };
 
         aphostrope {
             timeout-ms = <35>;
             bindings = <&kp SQT>;
             key-positions = <8 9>;
-            layers = <9>;
+            
         };
 
         backR {
@@ -45,7 +45,7 @@
             key-positions = <19 20>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <9 5 3 4>;
+            
         };
 
         backL {
@@ -53,7 +53,7 @@
             key-positions = <16 15>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <9 5 3 4>;
+            
         };
 
         questionR {
@@ -61,7 +61,7 @@
             key-positions = <32 33>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <9>;
+            
         };
 
         wordDel {
@@ -69,8 +69,7 @@
             key-positions = <14 15>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <9>;
-            layers = <0 5 3 4>;
+            
         };
 
         delR {
@@ -78,8 +77,7 @@
             key-positions = <7 8>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <9>;
-            layers = <0 5 3 4>;
+            
         };
 
         wordDelR {
@@ -87,7 +85,7 @@
             key-positions = <20 21>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <9 5 3 4>;
+            
         };
 
         shift {
@@ -95,7 +93,7 @@
             key-positions = <38 39>;
             timeout-ms = <150>;
             require-prior-idle-ms = <100>;
-            layers = <9>;
+            
         };
 
         miPc {
@@ -103,7 +101,7 @@
             key-positions = <13 25>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <9>;
+            
         };
 
         delL {
@@ -111,7 +109,7 @@
             key-positions = <17 16>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <9>;
+           
         };
     };
 
