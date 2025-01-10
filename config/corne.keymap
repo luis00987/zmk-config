@@ -23,18 +23,21 @@
             bindings = <&kp ESCAPE>;
             key-positions = <3 4>;
             require-prior-idle-ms = <100>;
+            layers = <0>;
         };
 
         adjL {
             timeout-ms = <300>;
             bindings = <&mo 7>;
             key-positions = <1 5>;
+            layers = <0>;
         };
 
         aphostrope {
             timeout-ms = <35>;
             bindings = <&kp SQT>;
             key-positions = <8 9>;
+            layers = <0>;
         };
 
         backR {
@@ -42,6 +45,7 @@
             key-positions = <19 20>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
+            layers = <0 5 3 4>;
         };
 
         backL {
@@ -49,6 +53,7 @@
             key-positions = <16 15>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
+            layers = <0 5 3 4>;
         };
 
         questionR {
@@ -56,6 +61,7 @@
             key-positions = <32 33>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
+            layers = <0>;
         };
 
         wordDel {
@@ -63,13 +69,17 @@
             key-positions = <14 15>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
+            layers = <0>;
+            layers = <0 5 3 4>;
         };
 
         delR {
             bindings = <&kp DELETE>;
-            key-positions = <31 32>;
+            key-positions = <7 8>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
+            layers = <0>;
+            layers = <0 5 3 4>;
         };
 
         wordDelR {
@@ -77,44 +87,31 @@
             key-positions = <20 21>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
+            layers = <0 5 3 4>;
         };
 
-        capsWord {
+        shift {
             bindings = <&caps_word>;
             key-positions = <38 39>;
             timeout-ms = <150>;
             require-prior-idle-ms = <100>;
+            layers = <0>;
+        };
+
+        miPc {
+            bindings = <&kp LG(E)>;
+            key-positions = <13 25>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
         };
 
         delL {
             bindings = <&kp DELETE>;
-            key-positions = <27 28>;
+            key-positions = <17 16>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-        };
-
-        toSym {
-            bindings = <&mo 5>;
-            key-positions = <37 40>;
-            timeout-ms = <50>;
-            slow-release;
-            require-prior-idle-ms = <100>;
-        };
-
-        toFn {
-            bindings = <&mo 6>;
-            key-positions = <16 37>;
-            timeout-ms = <50>;
-            slow-release;
-            require-prior-idle-ms = <100>;
-        };
-
-        toIpadSC {
-            bindings = <&mo 9>;
-            key-positions = <37 15>;
-            timeout-ms = <50>;
-            slow-release;
-            require-prior-idle-ms = <100>;
+            layers = <0>;
         };
     };
 
@@ -258,21 +255,12 @@
     keymap {
         compatible = "zmk,keymap";
 
-        testLayer {
+        L0 {
             bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R      &kp T                         &kp Y        &kp U      &kp I      &kp O    &kp P      &none
-&none  &kp A  &kp S  &kp D  &kp F      &kp G                         &kp H        &kp J      &kp K      &kp L    &kp SEMI   &none
-&none  &kp Z  &kp X  &kp C  &kp V      &kp B                         &kp N        &kp M      &kp COMMA  &kp DOT  &kp SLASH  &none
-                     &none  &lt 1 TAB  &stickShiftlt 2 LEFT_SHIFT    &lt 3 SPACE  &lt 4 RET  &none
-            >;
-        };
-
-        L0_2 {
-            bindings = <
-&none  &none         &none     &none      &none      &none    &none  &none      &none      &none     &none         &none
-&none  &sk LEFT_GUI  &sk LALT  &sk LCTRL  &sk LSHFT  &none    &none  &sk LSHFT  &sk LCTRL  &sk LALT  &sk LEFT_GUI  &none
-&none  &kp LEFT_GUI  &none     &none      &none      &none    &none  &none      &none      &none     &kp LEFT_GUI  &none
-                               &none      &none      &none    &none  &none      &none
+&none  &kp Q            &kp W            &kp E                &kp R              &kp T                         &kp Y        &kp U              &kp I                &kp O            &kp P                    &none
+&none  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G                         &kp H        &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_GUI SEMICOLON  &none
+&none  &kp Z            &kp X            &kp C                &kp V              &kp B                         &kp N        &kp M              &kp COMMA            &kp DOT          &kp SLASH                &none
+                                         &keyrepeatMo 6 0     &lt 2 TAB          &stickShiftlt 1 LEFT_SHIFT    &lt 3 SPACE  &lt 4 RET          &lt 5 BACKSPACE
             >;
         };
 
@@ -282,6 +270,15 @@
 &none  &kp LC(A)       &kp LC(X)      &kp LC(C)         &kp LC(V)          &kp DEL          &none  &none  &none  &none  &none  &none
 &none  &kp LC(Z)       &kp C_AC_HOME  &kp LG(LS(S))     &kp LG(D)          &kp LA(F4)       &none  &none  &none  &none  &none  &none
                                       &none             &none              &none            &none  &none  &none
+            >;
+        };
+
+        ipadSC {
+            bindings = <
+&none  &none      &none      &none                 &none      &none        &none  &none  &none  &none  &none  &none
+&none  &kp LG(A)  &kp LG(X)  &kp LG(C)             &kp LG(V)  &none        &none  &none  &none  &none  &none  &none
+&none  &kp LG(Z)  &none      &kp LG(LS(NUMBER_4))  &kp LG(H)  &kp ENTER    &none  &none  &none  &none  &none  &none
+                             &none                 &none      &none        &none  &none  &none
             >;
         };
 
@@ -327,24 +324,6 @@
 &none  &none  &none  &none  &none  &none          &none         &kp C_BRI_UP  &kp C_BRI_DEC  &none         &bt BT_CLR      &none
 &none  &none  &none  &none  &none  &none          &none         &none         &none          &none         &studio_unlock  &none
                      &none  &none  &bootloader    &bootloader   &none         &out OUT_TOG
-            >;
-        };
-
-        L0 {
-            bindings = <
-&none  &kp Q            &kp W            &kp E                &kp R              &kp T                         &kp Y        &kp U              &kp I                &kp O            &kp P                    &none
-&none  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G                         &kp H        &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_GUI SEMICOLON  &none
-&none  &kp Z            &kp X            &kp C                &kp V              &kp B                         &kp N        &kp M              &kp COMMA            &kp DOT          &kp SLASH                &none
-                                         &keyrepeatMo 6 0     &lt 1 TAB          &stickShiftlt 2 LEFT_SHIFT    &lt 3 SPACE  &lt 4 RET          &lt 5 BACKSPACE
-            >;
-        };
-
-        ipadSC {
-            bindings = <
-&none  &none      &none      &none                 &none      &none        &none  &none  &none  &none  &none  &none
-&none  &kp LG(A)  &kp LG(X)  &kp LG(C)             &kp LG(V)  &none        &none  &none  &none  &none  &none  &none
-&none  &kp LG(Z)  &none      &kp LG(LS(NUMBER_4))  &kp LG(H)  &kp ENTER    &none  &none  &none  &none  &none  &none
-                             &none                 &none      &none        &none  &none  &none
             >;
         };
     };
