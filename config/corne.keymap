@@ -51,7 +51,7 @@
 
         questionR {
             bindings = <&kp QUESTION>;
-            key-positions = <30 31>;
+            key-positions = <33 32>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
             layers = <0>;
@@ -59,7 +59,7 @@
 
         wordDel {
             bindings = <&kp LC(BACKSPACE)>;
-            key-positions = <28 27>;
+            key-positions = <15 14>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
             layers = <0 4 6 5>;
@@ -75,7 +75,7 @@
 
         wordDelR {
             bindings = <&kp LC(BACKSPACE)>;
-            key-positions = <31 32>;
+            key-positions = <20 21>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
             layers = <0 4 6 5>;
