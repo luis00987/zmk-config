@@ -155,6 +155,22 @@
             require-prior-idle-ms = <100>;
             layers = <0 4 6 5>;
         };
+
+        ctrL {
+            bindings = <&kp LEFT_CONTROL>;
+            key-positions = <26 27>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+            layers = <0 4 6 5>;
+        };
+
+        ctrlR {
+            bindings = <&kp LEFT_CONTROL>;
+            key-positions = <32 33>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+            layers = <0 4 6 5>;
+        };
     };
 
     behaviors {
