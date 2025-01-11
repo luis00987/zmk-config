@@ -139,6 +139,22 @@
             require-prior-idle-ms = <100>;
             layers = <0 4 6 5>;
         };
+
+        altR {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <20 21>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+            layers = <0 4 6 5>;
+        };
+
+        altL {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <15 14>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+            layers = <0 4 6 5>;
+        };
     };
 
     behaviors {
