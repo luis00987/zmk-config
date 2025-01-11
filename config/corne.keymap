@@ -171,6 +171,22 @@
             require-prior-idle-ms = <100>;
             layers = <0 4 6 5>;
         };
+
+        shiftR {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <7 8>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+            layers = <0 4 6 5>;
+        };
+
+        shiftL {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <4 3>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+            layers = <0 4 6 5>;
+        };
     };
 
     behaviors {
