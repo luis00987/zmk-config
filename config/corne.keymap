@@ -66,7 +66,7 @@
 
         wordDel {
             bindings = <&kp LC(BACKSPACE)>;
-            key-positions = <14 15>;
+            key-positions = <28 27>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
             layers = <0 4 6 5>;
@@ -74,7 +74,7 @@
 
         delR {
             bindings = <&kp DELETE>;
-            key-positions = <31 32>;
+            key-positions = <7 8>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
             layers = <0 4 6 5>;
@@ -82,7 +82,7 @@
 
         wordDelR {
             bindings = <&kp LC(BACKSPACE)>;
-            key-positions = <20 21>;
+            key-positions = <31 32>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
             layers = <0 4 6 5>;
@@ -98,7 +98,7 @@
 
         delL {
             bindings = <&kp DELETE>;
-            key-positions = <27 28>;
+            key-positions = <3 4>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
             layers = <0 4 6 5>;
