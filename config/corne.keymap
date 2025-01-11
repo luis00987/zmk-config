@@ -33,13 +33,6 @@
             layers = <0>;
         };
 
-        aphostrope {
-            timeout-ms = <35>;
-            bindings = <&kp SQT>;
-            key-positions = <6 7>;
-            layers = <0>;
-        };
-
         backR {
             bindings = <&kp BACKSPACE>;
             key-positions = <19 20>;
