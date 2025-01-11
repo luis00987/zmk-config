@@ -67,7 +67,7 @@
 
         delR {
             bindings = <&kp DELETE>;
-            key-positions = <18 19>;
+            key-positions = <31 32>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
             layers = <0 4 6 5>;
@@ -91,7 +91,7 @@
 
         delL {
             bindings = <&kp DELETE>;
-            key-positions = <17 16>;
+            key-positions = <27 28>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
             layers = <0 4 6 5>;
@@ -122,22 +122,6 @@
             slow-release;
             require-prior-idle-ms = <100>;
             layers = <0>;
-        };
-
-        winR {
-            bindings = <&kp LEFT_GUI>;
-            key-positions = <8 9>;
-            timeout-ms = <40>;
-            require-prior-idle-ms = <100>;
-            layers = <0 4 6 5>;
-        };
-
-        winL {
-            bindings = <&kp LEFT_GUI>;
-            key-positions = <2 3>;
-            timeout-ms = <40>;
-            require-prior-idle-ms = <100>;
-            layers = <0 4 6 5>;
         };
     };
 
