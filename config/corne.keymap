@@ -28,7 +28,7 @@
 
         adjL {
             timeout-ms = <300>;
-            bindings = <&mo 8>;
+            bindings = <&mo 7>;
             key-positions = <5 1>;
             layers = <0>;
         };
@@ -38,7 +38,7 @@
             key-positions = <19 20>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <0 4 6 5>;
+            layers = <0 3 5 4>;
         };
 
         backL {
@@ -46,7 +46,7 @@
             key-positions = <16 15>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <0 4 6 5>;
+            layers = <0 3 5 4>;
         };
 
         questionR {
@@ -62,7 +62,7 @@
             key-positions = <15 14>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <0 4 6 5>;
+            layers = <0 3 5 4>;
         };
 
         delR {
@@ -70,7 +70,7 @@
             key-positions = <31 32>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <0 4 6 5>;
+            layers = <0 3 5 4>;
         };
 
         wordDelR {
@@ -78,7 +78,7 @@
             key-positions = <20 21>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <0 4 6 5>;
+            layers = <0 3 5 4>;
         };
 
         capsWord {
@@ -94,11 +94,11 @@
             key-positions = <27 28>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <0 4 6 5>;
+            layers = <0 3 5 4>;
         };
 
         toSym {
-            bindings = <&mo 6>;
+            bindings = <&mo 5>;
             key-positions = <37 40>;
             timeout-ms = <50>;
             slow-release;
@@ -107,7 +107,7 @@
         };
 
         toFn {
-            bindings = <&mo 7>;
+            bindings = <&mo 6>;
             key-positions = <16 37>;
             timeout-ms = <50>;
             slow-release;
@@ -116,7 +116,7 @@
         };
 
         toIpadSC {
-            bindings = <&mo 3>;
+            bindings = <&mo 2>;
             key-positions = <38 39>;
             timeout-ms = <50>;
             slow-release;
@@ -260,16 +260,7 @@
 &none  &kp Q            &kp W            &kp E                &kp R              &kp T                         &kp Y        &kp U              &kp I                &kp O            &kp P                    &none
 &none  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G                         &kp H        &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_GUI SEMICOLON  &none
 &none  &kp Z            &kp X            &kp C                &kp V              &kp B                         &kp N        &kp M              &kp COMMA            &kp DOT          &kp SLASH                &none
-                                         &none                &lt 1 TAB          &stickShiftlt 2 LEFT_SHIFT    &lt 4 SPACE  &lt 5 RET          &none
-            >;
-        };
-
-        L0_2 {
-            bindings = <
-&none  &none         &none     &none      &none      &none    &none  &none      &none      &none     &none         &none
-&none  &sk LEFT_GUI  &sk LALT  &sk LCTRL  &sk LSHFT  &none    &none  &sk LSHFT  &sk LCTRL  &sk LALT  &sk LEFT_GUI  &none
-&none  &kp LEFT_GUI  &none     &none      &none      &none    &none  &none      &none      &none     &kp LEFT_GUI  &none
-                               &none      &none      &none    &none  &none      &none
+                                         &none                &lt 6 TAB          &stickShiftlt 1 LEFT_SHIFT    &lt 3 SPACE  &lt 4 RET          &none
             >;
         };
 
