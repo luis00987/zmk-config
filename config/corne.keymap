@@ -67,7 +67,7 @@
 
         delR {
             bindings = <&kp DELETE>;
-            key-positions = <7 8>;
+            key-positions = <18 19>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
             layers = <0 4 6 5>;
@@ -91,7 +91,7 @@
 
         delL {
             bindings = <&kp DELETE>;
-            key-positions = <3 4>;
+            key-positions = <17 16>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
             layers = <0 4 6 5>;
