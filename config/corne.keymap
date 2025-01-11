@@ -139,54 +139,6 @@
             require-prior-idle-ms = <100>;
             layers = <0 4 6 5>;
         };
-
-        altR {
-            bindings = <&kp LEFT_ALT>;
-            key-positions = <20 21>;
-            timeout-ms = <40>;
-            require-prior-idle-ms = <100>;
-            layers = <0 4 6 5>;
-        };
-
-        altL {
-            bindings = <&kp LEFT_ALT>;
-            key-positions = <15 14>;
-            timeout-ms = <40>;
-            require-prior-idle-ms = <100>;
-            layers = <0 4 6 5>;
-        };
-
-        ctrL {
-            bindings = <&kp LEFT_CONTROL>;
-            key-positions = <26 27>;
-            timeout-ms = <40>;
-            require-prior-idle-ms = <100>;
-            layers = <0 4 6 5>;
-        };
-
-        ctrlR {
-            bindings = <&kp LEFT_CONTROL>;
-            key-positions = <32 33>;
-            timeout-ms = <40>;
-            require-prior-idle-ms = <100>;
-            layers = <0 4 6 5>;
-        };
-
-        shiftR {
-            bindings = <&kp LEFT_SHIFT>;
-            key-positions = <22 21>;
-            timeout-ms = <40>;
-            require-prior-idle-ms = <100>;
-            layers = <0 4 6 5>;
-        };
-
-        shiftL {
-            bindings = <&kp LEFT_SHIFT>;
-            key-positions = <13 14>;
-            timeout-ms = <40>;
-            require-prior-idle-ms = <100>;
-            layers = <0 4 6 5>;
-        };
     };
 
     behaviors {
