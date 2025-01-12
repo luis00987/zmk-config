@@ -38,7 +38,7 @@
             key-positions = <19 20>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <0 3 5 4>;
+            layers = <0 4 6 5>;
         };
 
         backL {
@@ -46,7 +46,7 @@
             key-positions = <16 15>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <0 3 5 4>;
+            layers = <0 4 6 5>;
         };
 
         questionR {
@@ -62,7 +62,7 @@
             key-positions = <15 14>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <0 3 5 4>;
+            layers = <0 4 6 5>;
         };
 
         delR {
@@ -70,7 +70,7 @@
             key-positions = <31 32>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <0 3 5 4>;
+            layers = <0 4 6 5>;
         };
 
         wordDelR {
@@ -78,7 +78,7 @@
             key-positions = <20 21>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <0 3 5 4>;
+            layers = <0 4 6 5>;
         };
 
         capsWord {
@@ -94,11 +94,11 @@
             key-positions = <27 28>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <0 3 5 4>;
+            layers = <0 4 6 5>;
         };
 
         toSym {
-            bindings = <&mo 5>;
+            bindings = <&mo 6>;
             key-positions = <37 40>;
             timeout-ms = <50>;
             slow-release;
@@ -107,7 +107,7 @@
         };
 
         toIpadSC {
-            bindings = <&mo 2>;
+            bindings = <&mo 3>;
             key-positions = <38 39>;
             timeout-ms = <50>;
             slow-release;
@@ -251,7 +251,16 @@
 &none  &kp Q            &kp W            &kp E                &kp R              &kp T                         &kp Y        &kp U              &kp I                &kp O            &kp P                    &none
 &none  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G                         &kp H        &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_GUI SEMICOLON  &none
 &none  &kp Z            &kp X            &kp C                &kp V              &kp B                         &kp N        &kp M              &kp COMMA            &kp DOT          &kp SLASH                &none
-                                         &none                &lt 6 TAB          &stickShiftlt 1 LEFT_SHIFT    &lt 3 SPACE  &lt 4 RET          &none
+                                         &none                &lt 1 TAB          &stickShiftlt 2 LEFT_SHIFT    &lt 4 SPACE  &lt 5 RET          &none
+            >;
+        };
+
+        fn_mods {
+            bindings = <
+&none  &sk LEFT_ALT      &kp F1  &kp F2  &kp F3  &kp F10    &none  &none           &none      &none     &none         &none
+&none  &kp LEFT_GUI      &kp F4  &kp F5  &kp F6  &kp F11    &none  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT  &kp LEFT_GUI  &none
+&none  &sk LEFT_CONTROL  &kp F7  &kp F8  &kp F9  &kp F12    &none  &sk LEFT_SHIFT  &sk LCTRL  &sk LALT  &sk LEFT_GUI  &none
+                                 &none   &none   &none      &none  &none           &none
             >;
         };
 
@@ -297,15 +306,6 @@
 &none  &kp LEFT_GUI  &kp LALT  &kp LCTRL      &kp LEFT_SHIFT  &none                &kp MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER  &kp SLASH  &none
 &none  &kp CARET     &kp AMPS  &kp BACKSLASH  &kp PERCENT     &kp DOUBLE_QUOTES    &kp PIPE   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp TILDE  &kp EQUAL  &none
                                &none          &none           &none                &none      &none                 &none
-            >;
-        };
-
-        fn_mods {
-            bindings = <
-&none  &none         &kp F1  &kp F2  &kp F3  &kp F10    &none  &none           &none      &none     &none         &none
-&none  &kp LEFT_GUI  &kp F4  &kp F5  &kp F6  &kp F11    &none  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT  &kp LEFT_GUI  &none
-&none  &none         &kp F7  &kp F8  &kp F9  &kp F12    &none  &sk LEFT_SHIFT  &sk LCTRL  &sk LALT  &sk LEFT_GUI  &none
-                             &none   &none   &none      &none  &none           &none
             >;
         };
 
